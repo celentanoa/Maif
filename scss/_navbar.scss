@@ -1,0 +1,34 @@
+.navbar {
+    background-color: transparent;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1); // Sottile linea grigia
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
+    .nav-link {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: $primary-color;
+        text-transform: capitalize;
+        letter-spacing: 0.5px;
+        transition: color 0.3s ease, transform 0.2s ease, letter-spacing 0.3s ease;
+
+        &:hover {
+            color: $accent-color;
+            transform: translateY(-2px);
+            letter-spacing: 1px; // Aumenta la spaziatura al passaggio del mouse
+        }
+    }
+    // Per schermi più piccoli
+    @media (max-width: 768px) {
+        .nav-link {
+            font-size: 1rem;
+        }
+    }
+    @media (max-width: 480px) {
+        .nav-link {
+            font-size: 0.9rem;
+        }
+    }
+}

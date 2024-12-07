@@ -1,0 +1,61 @@
+@import './variables';
+@import './navbar';
+@import './footer';
+
+body {
+  background: $background-color;
+  font-family: $secondary-font;
+}
+
+.contact-section {
+  padding: 60px 0;
+  background-color: $background-color;
+
+  h2 {
+    font-family: $primary-font;
+    font-size: 2.5rem;
+    color: $primary-color;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .contact-form {
+    text-align: center; // Centra tutto il contenuto all'interno del form
+    max-width: 600px;   // Limita la larghezza massima del form
+    margin: 0 auto;     // Centra il form orizzontalmente
+
+    label {
+      display: block; // Assicura che le etichette siano su righe separate
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      width: 100%;         // La larghezza si adatta al contenitore
+      max-width: 500px;    // Limita la larghezza massima
+      margin: 0 auto 15px; // Centra i campi orizzontalmente e aggiunge margine inferiore
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid $secondary-color;
+      display: block;      // Mantiene i campi su righe separate
+    }
+
+    button {
+      display: inline-block; // Mantiene il pulsante centrato
+      margin-top: 15px;
+      background-color: $accent-color;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken($accent-color, 10%);
+        transition: background-color 0.3s;
+      }
+    }
+  }
+}

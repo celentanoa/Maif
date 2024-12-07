@@ -1,0 +1,63 @@
+$primary-color: #4b4453; // Sfondo
+$secondary-color: #ffffff; // Testo
+$accent-color: #e1d5e7; // Titoli
+$font-primary: "Bebas Neue", sans-serif; // Nuovo font per titoli
+$font-secondary: "Lato", sans-serif; // Nuovo font per testo
+
+.cv-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: 20px;
+
+  .cv-container {
+    width: 80%; // Colonna larga per il contenuto su una riga
+    max-width: 700px;
+    overflow-x: auto; // Abilita lo scroll orizzontale se necessario
+    white-space: nowrap; // Impedisce l'andare a capo
+    text-align: center;
+
+    h1 {
+      font-family: $font-primary;
+      font-size: 2rem;
+      color: $accent-color;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-family: $font-primary;
+      font-size: 1.4rem;
+      margin: 20px 0 10px;
+      color: $accent-color;
+    }
+
+    p,
+    li {
+      font-family: $font-secondary;
+      font-size: 0.9rem;
+      line-height: 1.2; // Line-height compatto
+      margin-bottom: 8px;
+      overflow: hidden; // Per evitare problemi di overflow
+
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    a {
+      color: $accent-color;
+      text-decoration: underline;
+      transition: color 0.3s;
+
+      &:hover {
+        color: lighten($accent-color, 10%);
+      }
+    }
+  }
+}

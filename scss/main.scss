@@ -1,0 +1,55 @@
+@import './variables';
+@import './footer';
+@import './navbar';
+
+body {
+    background: $background-color;
+    background-image: $background-image;
+    background-size: contain;
+    background-position: bottom center; // Allinea l'immagine alla parte inferiore
+    background-repeat: no-repeat;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Media queries semplificate (stesso comportamento per tutti i dispositivi) */
+@media (max-width: 768px) {}
+
+@media (max-width: 1024px) {}
+
+@media (min-width: 1025px) {}
+
+// Titolo
+h1 {
+    font-family: $primary-font;
+    font-size: 4rem;
+    color: $primary-color;
+    text-align: center;
+    margin-top: 10vh; // Sposta il titolo verticalmente
+    text-shadow: 2px 2px 5px $text-shadow;
+
+    &:hover {
+        color: $accent-color; // Cambia colore al passaggio del mouse
+        transform: scale(1.1); // Leggera espansione
+        transition: all 0.3s ease-in-out;
+    }
+
+    // Animazione di comparsa
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.no-underline{
+    text-decoration: none;
+}

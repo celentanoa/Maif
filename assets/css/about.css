@@ -1,0 +1,115 @@
+@charset "UTF-8";
+.navbar {
+  background-color: transparent;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  padding: 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.navbar .nav-link {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4B4453;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, transform 0.2s ease, letter-spacing 0.3s ease;
+}
+.navbar .nav-link:hover {
+  color: #81B29A;
+  transform: translateY(-2px);
+  letter-spacing: 1px;
+}
+@media (max-width: 768px) {
+  .navbar .nav-link {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .navbar .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
+.footer {
+  background-color: rgba(75, 68, 83, 0.6); /* Trasparenza applicata con rgba */
+  color: #F7F3E9;
+  padding: 5px 0; /* Aumento della padding per dare più spazio */
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  position: fixed; /* Posizionamento fisso */
+  bottom: 0; /* Posizionamento in basso */
+  left: 0;
+  width: 100%; /* Occupa tutta la larghezza */
+  z-index: 10;
+  display: flex;
+  justify-content: center; /* Centra il contenuto */
+  align-items: center; /* Centra verticalmente il contenuto */
+}
+
+.social-links {
+  margin-top: 10px; /* Spazio tra il testo e i link */
+}
+
+.social-links a {
+  margin: 0 10px; /* Distanza tra i link */
+  color: #F7F3E9; /* Colore dei link */
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #81B29A; /* Colore al passaggio del mouse */
+  transition: color 0.3s ease;
+}
+
+.about-page {
+  background-color: #F7F3E9;
+  background-image: "none";
+  background-size: cover;
+  background-position: center;
+  color: #4B4453;
+}
+
+.about-section {
+  padding: 30px 0;
+}
+.about-section h2 {
+  font-family: "Amatic SC", cursive;
+  font-size: 3rem;
+  color: #4B4453;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.about-section h3 {
+  font-family: "Amatic SC", cursive;
+  font-size: 2rem;
+  color: #81B29A;
+  margin-top: 20px;
+}
+.about-section .about-intro {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+  color: #A6B1E1;
+  margin-top: 10px;
+}
+.about-section .about-text {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  color: #4B4453;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.about-section .about-photo {
+  max-width: 100%;
+  height: auto;
+}
+
+.CV {
+  font-family: "Amatic SC", cursive;
+  font-size: 2rem;
+  color: #81B29A;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  text-decoration: none;
+}/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,49 @@
+.cv-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #4b4453;
+  color: #ffffff;
+  padding: 20px;
+}
+.cv-section .cv-container {
+  width: 80%;
+  max-width: 700px;
+  overflow-x: auto;
+  white-space: nowrap;
+  text-align: center;
+}
+.cv-section .cv-container h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  color: #e1d5e7;
+  margin-bottom: 10px;
+}
+.cv-section .cv-container h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.4rem;
+  margin: 20px 0 10px;
+  color: #e1d5e7;
+}
+.cv-section .cv-container p,
+.cv-section .cv-container li {
+  font-family: "Lato", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+.cv-section .cv-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.cv-section .cv-container a {
+  color: #e1d5e7;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+.cv-section .cv-container a:hover {
+  color: #f8f5fa;
+}/*# sourceMappingURL=CV.css.map */
