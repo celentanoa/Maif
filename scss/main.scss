@@ -4,7 +4,7 @@
 
 body {
     background: $background-color;
-    background-image: url('/assets/img/sfondo1.png');
+    background-image: url("../assets/img/sfondo1.png");
     background-size: contain;
     background-position: bottom center; // Allinea l'immagine alla parte inferiore
     background-repeat: no-repeat;
