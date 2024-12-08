@@ -17,7 +17,7 @@ $font-secondary: "Lato", sans-serif; // Nuovo font per testo
     width: 80%; // Colonna larga per il contenuto su una riga
     max-width: 700px;
     overflow-x: auto; // Abilita lo scroll orizzontale se necessario
-    white-space: nowrap; // Impedisce l'andare a capo
+    white-space: normal; // Impedisce l'andare a capo
     text-align: center;
 
     h1 {

@@ -75,7 +75,7 @@ body {
 /* Media queries semplificate (stesso comportamento per tutti i dispositivi) */
 h1 {
   font-family: "Amatic SC", cursive;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #4B4453;
   text-align: center;
   margin-top: 10vh;

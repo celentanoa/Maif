@@ -11,7 +11,7 @@
   width: 80%;
   max-width: 700px;
   overflow-x: auto;
-  white-space: nowrap;
+  white-space: normal;
   text-align: center;
 }
 .cv-section .cv-container h1 {
