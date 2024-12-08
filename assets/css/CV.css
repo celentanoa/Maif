@@ -46,4 +46,9 @@
 }
 .cv-section .cv-container a:hover {
   color: #f8f5fa;
+}
+@media (max-width: 768px) {
+  .cv-section .cv-container {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=CV.css.map */
