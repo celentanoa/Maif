@@ -18,7 +18,7 @@ body{
   min-height: 100vh;
   color: $secondary-color;
   padding: 20px;
-  margin-top: -50px;
+ // margin-top: -50px;
 
 
   .cv-container {
@@ -73,10 +73,6 @@ body{
   @media (max-width: 768px) {
     .cv-container {
       font-size: 0.8rem;
-    }
-
-    .cv-section{
-      margin-top: 0;
     }
   }
 }
