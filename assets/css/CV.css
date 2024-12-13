@@ -50,7 +50,7 @@ body {
   min-height: 100vh;
   color: #4B4453;
   padding: 20px;
-  margin-top: -20px;
+  margin-top: -50px;
 }
 .cv-section .cv-container {
   width: 90%;
@@ -95,5 +95,8 @@ body {
 @media (max-width: 768px) {
   .cv-section .cv-container {
     font-size: 0.8rem;
+  }
+  .cv-section .cv-section {
+    margin-top: 0;
   }
 }/*# sourceMappingURL=CV.css.map */
