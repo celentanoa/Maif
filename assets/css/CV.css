@@ -1,35 +1,4 @@
 @charset "UTF-8";
-.footer {
-  background-color: rgba(75, 68, 83, 0.6); /* Trasparenza applicata con rgba */
-  color: #F7F3E9;
-  padding: 5px 0; /* Aumento della padding per dare più spazio */
-  text-align: center;
-  font-family: "Quicksand", sans-serif;
-  position: fixed; /* Posizionamento fisso */
-  bottom: 0; /* Posizionamento in basso */
-  left: 0;
-  width: 100%; /* Occupa tutta la larghezza */
-  z-index: 10;
-  display: flex;
-  justify-content: center; /* Centra il contenuto */
-  align-items: center; /* Centra verticalmente il contenuto */
-}
-
-.social-links {
-  margin-top: 10px; /* Spazio tra il testo e i link */
-}
-
-.social-links a {
-  margin: 0 10px; /* Distanza tra i link */
-  color: #F7F3E9; /* Colore dei link */
-  text-decoration: none;
-}
-
-.social-links a:hover {
-  color: #81B29A; /* Colore al passaggio del mouse */
-  transition: color 0.3s ease;
-}
-
 .navbar {
   background-color: transparent !important; /* Sfondo trasparente */
   font-family: "Nunito", sans-serif;
