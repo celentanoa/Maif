@@ -4,8 +4,8 @@
 
 body {
     background: $background-color;
-    $background-image: $background-image;
-    background-size: contain;
+    background-image: $background-image;
+    background-size: 70%;
     background-position: bottom center; // Allinea l'immagine alla parte inferiore
     background-repeat: no-repeat;
     margin: 0;
@@ -25,7 +25,7 @@ h1 {
     font-size: 3rem;
     color: $primary-color;
     text-align: center;
-    margin-top: 10vh; // Sposta il titolo verticalmente
+    margin-top: 5vh; // Sposta il titolo verticalmente
     text-shadow: 2px 2px 5px $text-shadow;
 
     &:hover {
@@ -50,6 +50,33 @@ h1 {
     }
 }
 
-.no-underline{
+.no-underline {
     text-decoration: none;
+}
+
+.subtitle {
+    font-family: $secondary-font;
+    font-size: 1.2rem;
+    color: $primary-color;
+    margin-bottom: 1rem;
+    margin-top: 0; // Riduci il margine superiore del sottotitolo
+    text-shadow: 1px 1px 3px $text-shadow;
+}
+
+.cta-button {
+    font-family: $primary-font;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: $accent-color;
+    padding: 0.7rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 3rem; // Riduci il margine superiore del pulsante
+
+    &:hover {
+        background-color: darken($accent-color, 10%);
+        transform: scale(1.05);
+    }
 }
