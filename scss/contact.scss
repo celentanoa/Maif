@@ -20,29 +20,41 @@ body {
   }
 
   .contact-form {
-    text-align: center; // Centra tutto il contenuto all'interno del form
-    max-width: 600px;   // Limita la larghezza massima del form
-    margin: 0 auto;     // Centra il form orizzontalmente
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease; // Transizione al focus 
 
-    label {
-      display: block; // Assicura che le etichette siano su righe separate
-      margin-bottom: 8px;
-      font-weight: bold;
-    }
 
     input,
     textarea {
-      width: 100%;         // La larghezza si adatta al contenitore
-      max-width: 500px;    // Limita la larghezza massima
-      margin: 0 auto 15px; // Centra i campi orizzontalmente e aggiunge margine inferiore
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto 15px;
       padding: 10px;
       border-radius: 5px;
-      border: 1px solid $secondary-color;
-      display: block;      // Mantiene i campi su righe separate
+      border: 1px solid #ddd;
+      display: block;
+      transition: border-color 0.3s ease;
+    }
+
+    // Quando un campo è in focus 
+    input:focus,
+    textarea:focus {
+      border-color: $accent-color;
+      outline: none;
+    }
+
+    // Quando il modulo è in focus (per modificare il bordo esterno) 
+    &:focus-within {
+      border-color: $accent-color;
     }
 
     button {
-      display: inline-block; // Mantiene il pulsante centrato
+      display: inline-block;
       margin-top: 15px;
       background-color: $accent-color;
       color: white;
@@ -54,7 +66,6 @@ body {
 
       &:hover {
         background-color: darken($accent-color, 10%);
-        transition: background-color 0.3s;
       }
     }
   }

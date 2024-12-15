@@ -1,41 +1,35 @@
 @charset "UTF-8";
 .navbar {
-  background-color: transparent !important; /* Sfondo trasparente */
+  background-color: transparent !important;
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   padding: 10px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1); /* Linea sottile grigia */
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Ombreggiatura leggera */
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%2381B29A' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  /* Sostituisci '%2381B29A' con il colore accent in formato HEX, dove %23 è il simbolo # */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-toggler {
-  border: none; /* Rimuove il bordo di default */
+  border: none;
 }
 
 .nav-link {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #000; /* Colore testo */
+  color: #000;
   text-transform: capitalize;
   letter-spacing: 0.5px;
   transition: color 0.3s ease, transform 0.2s ease, letter-spacing 0.3s ease;
 }
 .nav-link:hover {
-  color: #81B29A; /* Cambia colore su hover */
+  color: #81B29A;
   transform: translateY(-2px);
-  letter-spacing: 1px; /* Aumenta spaziatura su hover */
+  letter-spacing: 1px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .navbar-nav {
     display: flex;
-    flex-direction: column; /* Voci in colonna */
+    flex-direction: column;
     text-align: center;
   }
 }
@@ -90,11 +84,10 @@ body {
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
-}
-.contact-section .contact-form label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
 }
 .contact-section .contact-form input,
 .contact-section .contact-form textarea {
@@ -103,8 +96,17 @@ body {
   margin: 0 auto 15px;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #A6B1E1;
+  border: 1px solid #ddd;
   display: block;
+  transition: border-color 0.3s ease;
+}
+.contact-section .contact-form input:focus,
+.contact-section .contact-form textarea:focus {
+  border-color: #81B29A;
+  outline: none;
+}
+.contact-section .contact-form:focus-within {
+  border-color: #81B29A;
 }
 .contact-section .contact-form button {
   display: inline-block;
@@ -119,5 +121,4 @@ body {
 }
 .contact-section .contact-form button:hover {
   background-color: #619f81;
-  transition: background-color 0.3s;
 }/*# sourceMappingURL=contact.css.map */

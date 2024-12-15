@@ -31,59 +31,52 @@
 }
 
 .navbar {
-  background-color: transparent !important; /* Sfondo trasparente */
+  background-color: transparent !important;
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   padding: 10px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1); /* Linea sottile grigia */
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Ombreggiatura leggera */
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%2381B29A' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  /* Sostituisci '%2381B29A' con il colore accent in formato HEX, dove %23 è il simbolo # */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-toggler {
-  border: none; /* Rimuove il bordo di default */
+  border: none;
 }
 
 .nav-link {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #000; /* Colore testo */
+  color: #000;
   text-transform: capitalize;
   letter-spacing: 0.5px;
   transition: color 0.3s ease, transform 0.2s ease, letter-spacing 0.3s ease;
 }
 .nav-link:hover {
-  color: #81B29A; /* Cambia colore su hover */
+  color: #81B29A;
   transform: translateY(-2px);
-  letter-spacing: 1px; /* Aumenta spaziatura su hover */
+  letter-spacing: 1px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .navbar-nav {
     display: flex;
-    flex-direction: column; /* Voci in colonna */
+    flex-direction: column;
     text-align: center;
   }
 }
 body {
   background: #F7F3E9;
   background-image: url('../img/sfondo1.png');
-  background-size: 70%;
-  background-position: bottom center;
+  background-size: 65%;
+  background-position: bottom right;
   background-repeat: no-repeat;
   margin: 0;
   min-height: 100vh;
 }
 
-/* Media queries semplificate (stesso comportamento per tutti i dispositivi) */
 h1 {
   font-family: "Amatic SC", cursive;
-  font-size: 3rem;
+  font-size: 5rem;
   color: #4B4453;
   text-align: center;
   margin-top: 5vh;
@@ -112,16 +105,23 @@ h1:hover {
 
 .subtitle {
   font-family: "Quicksand", sans-serif;
-  font-size: 1.2rem;
+  font-size: 2rem;
+  text-align: left;
   color: #4B4453;
+  margin-top: 4rem;
   margin-bottom: 1rem;
-  margin-top: 0;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button-container {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
 }
 
 .cta-button {
   font-family: "Amatic SC", cursive;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #fff;
   background-color: #81B29A;
   padding: 0.7rem 2rem;
@@ -129,9 +129,55 @@ h1:hover {
   text-decoration: none;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease, transform 0.3s ease;
-  margin-top: 3rem;
+  margin-top: 2rem;
+  width: auto;
+  display: inline-block;
 }
 .cta-button:hover {
   background-color: #619f81;
   transform: scale(1.05);
+}
+
+.citazione {
+  font-family: "Amatic SC", cursive;
+  font-size: 2rem;
+  text-align: left;
+  color: #4B4453;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+    margin-top: 3vh;
+    transform: scale(0.5);
+  }
+  .subtitle {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .cta-button {
+    font-size: 1.3rem;
+    padding: 0.5rem 1.5rem;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+  }
+  .citazione {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -4,25 +4,19 @@
 
 body {
     background: $background-color;
-   background-image:$background-image;
-    background-size: 70%;
-    background-position: bottom center; // Allinea l'immagine alla parte inferiore
+    background-image: $background-image;
+    background-size: 65%;
+    background-position: bottom right; // Allinea l'immagine alla parte inferiore
     background-repeat: no-repeat;
     margin: 0;
     min-height: 100vh;
+
 }
-
-/* Media queries semplificate (stesso comportamento per tutti i dispositivi) */
-@media (max-width: 768px) {}
-
-@media (max-width: 1024px) {}
-
-@media (min-width: 1025px) {}
 
 // Titolo
 h1 {
     font-family: $primary-font;
-    font-size: 3rem;
+    font-size: 5rem;
     color: $primary-color;
     text-align: center;
     margin-top: 5vh; // Sposta il titolo verticalmente
@@ -56,16 +50,23 @@ h1 {
 
 .subtitle {
     font-family: $secondary-font;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    text-align: left;
     color: $primary-color;
+    margin-top: 4rem;
     margin-bottom: 1rem;
-    margin-top: 0; // Riduci il margine superiore del sottotitolo
     text-shadow: 1px 1px 3px $text-shadow;
+}
+
+.button-container {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
 }
 
 .cta-button {
     font-family: $primary-font;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #fff;
     background-color: $accent-color;
     padding: 0.7rem 2rem;
@@ -73,10 +74,62 @@ h1 {
     text-decoration: none;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-top: 3rem; // Riduci il margine superiore del pulsante
+    margin-top: 2rem; // Riduci il margine superiore del pulsante
+    width: auto;
+    display: inline-block;
 
     &:hover {
         background-color: darken($accent-color, 10%);
         transform: scale(1.05);
+    }
+}
+
+
+.citazione {
+    font-family: $primary-font;
+    font-size: 2rem;
+    text-align: left;
+    color: $primary-color;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    text-shadow: 1px 1px 3px $text-shadow;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3.5rem;
+        margin-top: 3vh; // Riduce lo spazio verticale
+        transform: scale(0.5);
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        line-height: 1.5;
+    }
+
+    .button-container {
+        flex-direction: column; // Dispone i pulsanti in colonna
+        align-items: center; // Centra i pulsanti
+        gap: 1.5rem; // Riduce lo spazio tra i pulsanti
+    }
+
+    .cta-button {
+        font-size: 1.3rem; // Leggermente più piccolo
+        padding: 0.5rem 1.5rem; // Regola il padding per uno stile più compatto
+        width: 80%; // Imposta una larghezza relativa per una visualizzazione uniforme
+        max-width: 300px; // Limita la larghezza massima
+        text-align: center;
+    }
+
+    .citazione {
+        font-size: 1.6rem; // Uniforma la dimensione
+        text-align: center; // Centra il testo
+        margin-top: 2rem; // Riduce lo spazio verticale
+        margin-bottom: 2rem;
+        line-height: 1.5; // Migliora la leggibilità
     }
 }
