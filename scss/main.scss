@@ -60,7 +60,7 @@ h1 {
 
 .button-container {
     display: flex;
-    gap: 2.5rem;
+    gap: 2rem;
     align-items: flex-start;
 }
 
@@ -98,9 +98,9 @@ h1 {
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
         margin-top: 3vh; // Riduce lo spazio verticale
-        transform: scale(0.5);
+        transform: scale(1);
     }
 
     .subtitle {
