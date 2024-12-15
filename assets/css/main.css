@@ -177,7 +177,42 @@ h1:hover {
     font-size: 1.6rem;
     text-align: center;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 400px) {
+  h1 {
+    font-size: 3rem;
+    margin-top: 3vh;
+    transform: scale(1);
+  }
+  .subtitle {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: -1rem;
+  }
+  .cta-button {
+    font-size: 1.3rem;
+    padding: 0.5rem 1.5rem;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .citazione {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
     line-height: 1.5;
   }
 }/*# sourceMappingURL=main.css.map */

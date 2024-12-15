@@ -129,7 +129,47 @@ h1 {
         font-size: 1.6rem; // Uniforma la dimensione
         text-align: center; // Centra il testo
         margin-top: 2rem; // Riduce lo spazio verticale
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+        line-height: 1.5; // Migliora la leggibilità
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 3rem;
+        margin-top: 3vh; // Riduce lo spazio verticale
+        transform: scale(1);
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.5;
+    }
+
+    .button-container {
+        flex-direction: column; // Dispone i pulsanti in colonna
+        align-items: center; // Centra i pulsanti
+        gap: 0.5rem; // Riduce lo spazio tra i pulsanti
+        margin-top: -1rem; // Fa salire i pulsanti rispetto al sottotitolo
+    }
+
+    .cta-button {
+        font-size: 1.3rem; // Leggermente più piccolo
+        padding: 0.5rem 1.5rem; // Regola il padding per uno stile più compatto
+        width: 80%; // Imposta una larghezza relativa per una visualizzazione uniforme
+        max-width: 300px; // Limita la larghezza massima
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .citazione {
+        font-size: 1.5rem; // Uniforma la dimensione
+        text-align: center; // Centra il testo
+        margin-top: 1.5rem; // Riduce lo spazio verticale
+        margin-bottom: 3rem;
         line-height: 1.5; // Migliora la leggibilità
     }
 }
