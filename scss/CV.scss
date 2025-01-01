@@ -1,5 +1,6 @@
 @import './variables';
 @import './navbar';
+@import './footer';
 
 
 $primary-color: #F7F3E9; // Sfondo
@@ -114,16 +115,15 @@ body {
   
 }
 
-
+/*
 .footer{
   text-align: left;
   color: $background-color;
   background-color: rgba(75, 68, 83, 0.6);
   font-family: $secondary-font;
-  position: fixed; /* Posizionamento fisso */
-  bottom: 0; /* Posizionamento in basso */
+  position: fixed; /* Posizionamento fisso 
+  bottom: 0; /* Posizionamento in basso 
   left: 0;
-  width: 100%; /* Occupa tutta la larghezza */
+  width: 100%; /* Occupa tutta la larghezza 
   z-index: 10;
-}
-
+} */

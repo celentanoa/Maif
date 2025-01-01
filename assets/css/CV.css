@@ -29,6 +29,13 @@
   letter-spacing: 1px;
 }
 
+.nav-link.active {
+  color: #81B29A; /* Mantiene il colore dell'accento */
+  font-weight: bold; /* Distingue visivamente il link attivo */
+  border-bottom: 2px solid #81B29A; /* Aggiunge una linea sotto il link attivo */
+  cursor: default; /* Indica che il link è già attivo */
+}
+
 @media (max-width: 768px) {
   .navbar-nav {
     display: flex;
@@ -36,6 +43,33 @@
     text-align: center;
   }
 }
+.footer {
+  background-color: rgba(75, 68, 83, 0.6);
+  color: #f8f9fa;
+  text-align: center;
+  padding: 10px 0;
+  font-family: "Arial", sans-serif;
+}
+
+.social-links {
+  margin-top: 10px;
+  /* Spazio tra il testo e i link */
+}
+
+.social-links a {
+  margin: 0 10px;
+  /* Distanza tra i link */
+  color: #F7F3E9;
+  /* Colore dei link */
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #81B29A;
+  /* Colore al passaggio del mouse */
+  transition: color 0.3s ease;
+}
+
 body {
   background-color: #F7F3E9;
   background-image: url('../img/sfondo1.png');
@@ -126,14 +160,15 @@ body {
   }
 }
 
-.footer {
+/*
+.footer{
   text-align: left;
-  color: #F7F3E9;
+  color: $background-color;
   background-color: rgba(75, 68, 83, 0.6);
-  font-family: "Quicksand", sans-serif;
-  position: fixed; /* Posizionamento fisso */
-  bottom: 0; /* Posizionamento in basso */
+  font-family: $secondary-font;
+  position: fixed; /* Posizionamento fisso 
+  bottom: 0; /* Posizionamento in basso 
   left: 0;
-  width: 100%; /* Occupa tutta la larghezza */
+  width: 100%; /* Occupa tutta la larghezza 
   z-index: 10;
-}/*# sourceMappingURL=CV.css.map */
+} *//*# sourceMappingURL=CV.css.map */

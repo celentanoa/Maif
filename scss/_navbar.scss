@@ -29,6 +29,14 @@
     }
 }
 
+.nav-link.active {
+    color: #81B29A; /* Mantiene il colore dell'accento */
+    font-weight: bold; /* Distingue visivamente il link attivo */
+    border-bottom: 2px solid #81B29A; /* Aggiunge una linea sotto il link attivo */
+    cursor: default; /* Indica che il link è già attivo */
+}
+
+
 // Responsive Design 
 @media (max-width: 768px) {
     .navbar-nav {

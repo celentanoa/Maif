@@ -1,32 +1,28 @@
 @charset "UTF-8";
 .footer {
-  background-color: rgba(75, 68, 83, 0.6); /* Trasparenza applicata con rgba */
-  color: #F7F3E9;
-  padding: 5px 0; /* Aumento della padding per dare più spazio */
+  background-color: rgba(75, 68, 83, 0.6);
+  color: #f8f9fa;
   text-align: center;
-  font-family: "Quicksand", sans-serif;
-  position: fixed; /* Posizionamento fisso */
-  bottom: 0; /* Posizionamento in basso */
-  left: 0;
-  width: 100%; /* Occupa tutta la larghezza */
-  z-index: 10;
-  display: flex;
-  justify-content: center; /* Centra il contenuto */
-  align-items: center; /* Centra verticalmente il contenuto */
+  padding: 10px 0;
+  font-family: "Arial", sans-serif;
 }
 
 .social-links {
-  margin-top: 10px; /* Spazio tra il testo e i link */
+  margin-top: 10px;
+  /* Spazio tra il testo e i link */
 }
 
 .social-links a {
-  margin: 0 10px; /* Distanza tra i link */
-  color: #F7F3E9; /* Colore dei link */
+  margin: 0 10px;
+  /* Distanza tra i link */
+  color: #F7F3E9;
+  /* Colore dei link */
   text-decoration: none;
 }
 
 .social-links a:hover {
-  color: #81B29A; /* Colore al passaggio del mouse */
+  color: #81B29A;
+  /* Colore al passaggio del mouse */
   transition: color 0.3s ease;
 }
 
@@ -60,6 +56,13 @@
   letter-spacing: 1px;
 }
 
+.nav-link.active {
+  color: #81B29A; /* Mantiene il colore dell'accento */
+  font-weight: bold; /* Distingue visivamente il link attivo */
+  border-bottom: 2px solid #81B29A; /* Aggiunge una linea sotto il link attivo */
+  cursor: default; /* Indica che il link è già attivo */
+}
+
 @media (max-width: 768px) {
   .navbar-nav {
     display: flex;
@@ -75,6 +78,12 @@ body {
   background-repeat: no-repeat;
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 h1 {
